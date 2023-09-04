@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
 }
 
 :root{
@@ -26,18 +27,106 @@
     --font-weight: 500;
 }
 
+body{
+     background-color: var(--very-dark-blue-main);
+     margin-top: 50px;
+}
 
+.hero-card{
+    width: 400px;
+    margin: auto;
+    background-color: var(--very-dark-blue-card);
+    padding: 30px;
+    border-radius: 1rem;
+}
 
+.image-container{
+    height: auto;
+    max-width: 100%;
+    border-radius: 1rem;
+}
 
+.main-img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 1rem;
+}
 
+.overlay{
+    position: absolute;
+    background: var(--cyan);
+}
 
+/* NEED TO WORK ON COVER IMAGE AND COLOR */
+.image-container:hover .overlay{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.title{
+    color: var(--white);
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.title:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.info{
+    color: var(--soft-blue);
+    font-size: 20px;
+    margin-top: 30px;
+}
 
 .price-time{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
-.price, .time{
+.price{
     display: flex;
     gap: 10px;
+    color: var(--cyan);
 }
+
+.time{
+    display: flex;
+    gap: 10px;
+    color: var(--soft-blue);
+}
+
+hr{
+    margin: 30px 0;
+    border-top: 1px solid var(--soft-blue);
+    border-bottom: 0;
+}
+
+.creator{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.creator-img{
+    width: 15%;
+    border: 2px solid var(--soft-blue);
+    border-radius: 50%;
+}
+
+.creator-info{
+    font-size: 20px;
+    color: var(--soft-blue);
+}
+
+.creator-info span{
+    color: var(--white);
+}
+
+.creator-info span:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+
